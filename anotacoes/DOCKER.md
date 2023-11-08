@@ -37,3 +37,37 @@ Em resumo, esse comando Docker é um exemplo de um ponto de entrada que não faz
 ## DockerCompose
 
 O Docker compose facilita a criação dos containers nescessários ao ambiente de desenvolvimento podendo subir diversos container diferentes e diversas aplicações em paralelo
+
+# Iniciando o ambiente de Desenvolvimento
+
+O comando a seguir é utilizado para subir o ambiente de desenvolvimento
+
+```bash
+docker-compose up --build -d
+```
+
+O comando a cima irá subir o container, sua descrição é a seguinte
+
+```yaml
+version: "3.6"
+
+services:
+  api:
+    build: .
+    volumes:
+      - ./aula:/aula
+      - ./referencial:/referencial
+    ports:
+      - 8000:8000
+      - 8080:8080
+
+```
+
+Onde na seção services serão definidos os seriços especificados
+
+1. **api**: É o nome do serviço
+2. **build**: É o caminho para o local em que o Docker file responsável por subir esse arquivo está
+3. **volumes**: Realiza o mapeamento das pastas locais para pastas dentro do container
+4. **ports**: Mapeias as portas para dentro do container
+
+Junto com essas configurações, ao rodar o comando descrito no inicio dessa seção o Docker Compose criará um contêiner chamado "api" com as configurações especificadas. Ele será construído a partir do Dockerfile no diretório atual e terá acesso aos volumes mapeados para "/aula" e "/referencial". Além disso, as portas 8000 e 8080 do host estarão mapeadas para as portas correspondentes dentro do contêiner.
