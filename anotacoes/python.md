@@ -11,3 +11,23 @@ Para evitar que todas as dependências sejam instaladas de forma gloval, e evita
 ```bash
 python -m venv ./venv
 ```
+
+## 2. Ativação do ambiente virtual
+
+```bash
+source venv/bin/activate
+```
+
+## 2. Desativação do ambiente virtual
+
+```bash
+deactivate
+```
+
+## 2. Instalação de pacotes
+
+O gerenciador de pacotes do python é o pip para instalar um antes de tudo precisa garantir que um ambiente virtual esteja carregado e devidamente inicializado, conforme a seção anterior. após isso, basta realizar o comando conforme o exemplo mostrado a seguir com a instalação do django:
+
+```bash
+pip install django
+```
