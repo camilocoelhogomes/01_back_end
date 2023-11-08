@@ -6,4 +6,5 @@ Ele também entrega uma pequena visão sobre criar um ambiente de desenvolviment
 ## Indice
 
 - <a href="./anotacoes/docker.md"> Docker </a>
+- <a href="./anotacoes/python.md"> Python </a>
 
