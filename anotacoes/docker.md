@@ -53,7 +53,7 @@ version: "3.6"
 
 services:
   api:
-    build: .
+    build: ./src
     volumes:
       - ./aula:/aula
       - ./referencial:/referencial
