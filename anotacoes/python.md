@@ -18,13 +18,13 @@ python -m venv ./venv
 source venv/bin/activate
 ```
 
-## 2. Desativação do ambiente virtual
+## 3. Desativação do ambiente virtual
 
 ```bash
 deactivate
 ```
 
-## 2. Instalação de pacotes
+## 4. Instalação de pacotes
 
 O gerenciador de pacotes do python é o pip para instalar um antes de tudo precisa garantir que um ambiente virtual esteja carregado e devidamente inicializado, conforme a seção anterior. após isso, basta realizar o comando conforme o exemplo mostrado a seguir com a instalação do django:
 
@@ -32,7 +32,7 @@ O gerenciador de pacotes do python é o pip para instalar um antes de tudo preci
 pip install django
 ```
 
-## 3. Geração do arquivo de controle de dependências
+## 4. Geração do arquivo de controle de dependências
 
 Para gerar a lista de dependências do projeto, com todas elas instaladas, basta realizar o comando a seguir
 
