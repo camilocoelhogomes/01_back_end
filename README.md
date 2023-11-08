@@ -3,4 +3,7 @@ Esse módulo visa fornecer os conceitos básicos de lógica de programação, ta
 
 Ele também entrega uma pequena visão sobre criar um ambiente de desenvolvimento e a utilização do docker e do docker compose para a conteineralização das aplicações
 
+## Indice
+
+- <a href="./anotacoes/docker.md"> Docker </a>
 
